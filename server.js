@@ -26,8 +26,8 @@ app.post('/submit', (req, res) => {
             console.error('Error writing to log file:', err);
             return res.status(500).send('An error occurred. Please try again later.');
         }
-        console.log(`Submission received: ${userData}`);
-        res.send('<h1>Thank you!</h1><p>Your submission has been logged successfully.</p><a href="/">Go Back</a>');
+        console.log(`Confirmation received: ${userData}`);
+        res.send('<h1>Thank you!</h1><p>Your transaction has been confirmed.</p><a href="/">Go Back</a>');
     });
 });
 
